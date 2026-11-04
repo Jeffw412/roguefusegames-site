@@ -168,7 +168,7 @@ function homePage(games) {
 			<div class="body">
 				<img class="icon" src="${asset(g, g.icon)}" alt="" width="72" height="72" loading="lazy">
 				<div>
-					<h3>${esc(g.name)}</h3>
+					<h3>${esc(g.store_title || g.name)}</h3>
 					<p class="tag">${esc(g.tagline)}</p>
 					<p class="sum">${esc(g.summary)}</p>
 					<span class="more">See the game ${ICONS.arrow}</span>
@@ -337,12 +337,19 @@ ${lightbox()}`;
 	}, "games", body, games, `<script src="/game.js?v=${BUILD_ID}" defer></script>\n`);
 }
 
+// "Stormchaser: Extreme Weather" shows as the short name with the subtitle on its own line.
+function titleHtml(g) {
+	const t = g.store_title || g.name;
+	const m = t.startsWith(g.name) && t.slice(g.name.length).match(/^\s*[:\-–—]\s*(.+)$/);
+	return m ? `${esc(g.name)}<span class="sub">${esc(m[1])}</span>` : esc(t);
+}
+
 function heroText(g) {
 	const links = (g.links || []).map((l) => `<a class="cta ${l.primary ? "primary" : "ghost"}" href="${esc(l.url)}"${/^https?:/.test(l.url) ? ' rel="noopener"' : ""}>${esc(l.label)}${/^https?:/.test(l.url) && !l.primary ? ` ${ICONS.out}` : ""}</a>`).join("");
 	const trailer = g.trailer ? `<a class="cta ghost" href="#trailer">${ICONS.film} Trailer</a>` : "";
 	return `
 		<div class="title-row"><img src="${asset(g, g.icon)}" alt="" width="76" height="76"><div><p class="kicker">${esc(g.kicker || g.genre || "")}</p><span class="pill ${esc(g.status_kind)}">${esc(g.status)}</span></div></div>
-		<h1>${esc(g.name)}</h1>
+		<h1>${titleHtml(g)}</h1>
 		<p class="tag">${esc(g.tagline)}</p>
 		<p class="lead">${esc(g.summary)}</p>
 		<div class="cta-row">${links}${storeBadge(g)}${trailer}</div>`;
@@ -382,17 +389,17 @@ function policyPage(g, kind, games) {
 </html>
 `;
 	}
-	const vars = { name: esc(g.name), studio: esc(site.studio), email: esc(g.email), effective: esc(p.effective), url: abs(g.base) };
+	const vars = { name: esc(g.name), title: esc(g.store_title || g.name), studio: esc(site.studio), email: esc(g.email), effective: esc(p.effective), url: abs(g.base) };
 	const html = fill(fs.readFileSync(path.join(g.dir, p.file), "utf8"), vars);
 	const other = kind === "privacy" ? "terms" : "privacy";
 	const body = `${crumbs(g, label)}
 <h1>${esc(label)}</h1>
-<p class="updated">${esc(g.name)} · Effective ${esc(p.effective)}</p>
+<p class="updated">${esc(g.store_title || g.name)} · Effective ${esc(p.effective)}</p>
 ${html}
 <div class="doc-nav"><a class="cta ghost" href="${g.base}">${esc(g.name)}</a><a class="cta ghost" href="${esc(policyUrl(g, other))}">${other === "privacy" ? "Privacy Policy" : "Terms of Use"}</a><a class="cta ghost" href="/support/">Support</a></div>`;
 	return page({
-		title: `${label}: ${g.name} | ${site.studio}`,
-		description: `The ${label.toLowerCase()} for ${g.name} by ${site.studio}.`,
+		title: `${label}: ${g.store_title || g.name} | ${site.studio}`,
+		description: `The ${label.toLowerCase()} for ${g.store_title || g.name} by ${site.studio}.`,
 		canonical: abs(`${g.base}${kind}/`),
 		accent: g.accent,
 		accent2: g.accent2,

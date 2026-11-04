@@ -1,12 +1,12 @@
 {
 	"order": 1,
 	"name": "Stormchaser",
-	"store_title": "Stormchaser",
+	"store_title": "Stormchaser: Extreme Weather",
 	"tagline": "Chase. Probe. Bail.",
-	"kicker": "Storm-chasing action for Android",
+	"kicker": "Extreme-weather chasing action for Android",
 	"status": "In development",
 	"status_kind": "dev",
-	"genre": "Arcade / idle storm chasing",
+	"genre": "Arcade / idle extreme-weather chasing",
 	"platforms": ["Android"],
 	"package": "com.roguefusegames.stormchaser",
 	"accent": "#3ee07a",
@@ -15,19 +15,20 @@
 	"hero": { "type": "phone", "image": "img/shots/02.webp" },
 	"card_image": "img/card.webp",
 	"og_image": "img/card.jpg",
-	"summary": "Drive an armored chase truck into procedurally generated tornadoes. Get close, launch probes, film the funnel and get out before the storm lifts you.",
+	"summary": "Drive an armored chase truck into extreme weather, starting with procedurally generated tornadoes. Get close, launch probes, film the storm and get out before it lifts you.",
 	"description": [
-		"Every chase is a push-your-luck bet: the closer you get to the funnel, the more your data and footage pay, and the harder the storm pulls. Anchor down, deploy probes into the core, dodge the debris and bail before the truck leaves the ground.",
-		"No two storms behave the same. Tornadoes turn, speed up, split, wrap in rain and rope out across farmland, small towns, suburbs, cities and badlands, and they throw cows, cars and houses as they go. Spend your haul on upgrades that bolt visibly onto the truck, then hire chase crews who keep earning while you're away."
+		"Every chase is a push-your-luck bet: the closer you get to the storm, the more your data and footage pay, and the harder the storm pulls. Anchor down, deploy probes into the core, dodge the debris and bail before the truck leaves the ground.",
+		"No two storms behave the same. Tornadoes turn, speed up, split, wrap in rain and rope out across farmland, small towns, suburbs, cities and badlands, and they throw cows, cars and houses as they go. Spend your haul on upgrades that bolt visibly onto the truck, then hire chase crews who keep earning while you're away.",
+		"Tornadoes are just the start. Future updates bring more kinds of extreme weather to chase, each with its own dangers and rewards."
 	],
 	"stats": [
 		["1.5–3", "minute chases"],
-		["EF0–EF5", "tornadoes"],
+		["EF0–EF5", "tornadoes, more weather coming"],
 		["1", "thumb to play"]
 	],
 	"features": [
 		{ "title": "Push your luck", "text": "Closer pays more and is more dangerous. Hold the rings, hit the core with probes and bail at the last second." },
-		{ "title": "No two storms alike", "text": "Procedural tornadoes that turn, split, wrap in rain and rope out, on maps generated fresh for every chase." },
+		{ "title": "No two storms alike", "text": "Procedural tornadoes that turn, split, wrap in rain and rope out, on maps generated fresh for every chase. More extreme weather is on the way." },
 		{ "title": "Everything goes flying", "text": "Trees, cars, cows, barns and houses get picked up and thrown, and the debris can hit your truck." },
 		{ "title": "The truck is the hero", "text": "Engine, armor, anchors, tires, probes and cameras: every upgrade shows on the truck, tier after tier." },
 		{ "title": "Crews and radar", "text": "Hire chase crews and build stations that keep chasing storms and earning while the app is closed." },
