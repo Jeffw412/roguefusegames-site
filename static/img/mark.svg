@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+	<defs>
+		<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#1a2130"/>
+			<stop offset="1" stop-color="#0b0e15"/>
+		</linearGradient>
+		<radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+			<stop offset="0" stop-color="#ffd36b" stop-opacity="0.95"/>
+			<stop offset="0.35" stop-color="#ff7a1a" stop-opacity="0.55"/>
+			<stop offset="1" stop-color="#ff5a00" stop-opacity="0"/>
+		</radialGradient>
+		<linearGradient id="spark" x1="0" y1="0" x2="1" y2="1">
+			<stop offset="0" stop-color="#fff3c4"/>
+			<stop offset="0.5" stop-color="#ffc23d"/>
+			<stop offset="1" stop-color="#ff6a12"/>
+		</linearGradient>
+	</defs>
+	<rect x="1" y="1" width="62" height="62" rx="15" fill="url(#bg)" stroke="#2a3446" stroke-width="2"/>
+	<path d="M13 52c4-1 7-4 8.5-8.5S24 34 29 31.5s8-3.5 10-8.5" fill="none" stroke="#2a1d12" stroke-width="5.5" stroke-linecap="round"/>
+	<path d="M13 52c4-1 7-4 8.5-8.5S24 34 29 31.5s8-3.5 10-8.5" fill="none" stroke="#c49a5e" stroke-width="3.2" stroke-linecap="round"/>
+	<path d="M13 52c4-1 7-4 8.5-8.5S24 34 29 31.5s8-3.5 10-8.5" fill="none" stroke="#6e4c26" stroke-width="3.2" stroke-dasharray="1.1 2.4"/>
+	<circle cx="42" cy="21" r="18" fill="url(#glow)"/>
+	<path d="M42 6L43.15 18.23 48.36 14.64 44.77 19.85 57 21 44.77 22.15 48.36 27.36 43.15 23.77 42 36 40.85 23.77 35.64 27.36 39.23 22.15 27 21 39.23 19.85 35.64 14.64 40.85 18.23Z" fill="url(#spark)"/>
+	<circle cx="42" cy="21" r="2.6" fill="#fffbe8"/>
+</svg>

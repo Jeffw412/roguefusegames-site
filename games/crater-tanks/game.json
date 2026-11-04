@@ -1,0 +1,76 @@
+{
+	"order": 2,
+	"name": "Crater Tanks",
+	"store_title": "Crater Tanks: Artillery Wars",
+	"tagline": "Artillery Wars",
+	"kicker": "Turn-based 3D tank artillery for Android",
+	"status": "Closed beta",
+	"status_kind": "beta",
+	"genre": "Turn-based artillery",
+	"platforms": ["Android"],
+	"package": "com.cratertanks.game",
+	"accent": "#ff9e29",
+	"accent2": "#ffd24d",
+	"icon": "img/icon_192.png",
+	"hero": {
+		"type": "art",
+		"image": "img/keyart.webp",
+		"mobile": "img/keyart_m.webp",
+		"fallback": "img/keyart.jpg",
+		"position": "72% 50%"
+	},
+	"card_image": "img/keyart_m.webp",
+	"summary": "Pick your munition, find your arc and fire. Turn-based tank battles on destructible 3D battlefields, where every blast tears a real crater.",
+	"description": [
+		"Crater Tanks is turn-based tank artillery in full 3D. Line up the shot, read the terrain and the radar, and land the hit, then watch the ground crater where your shell comes down.",
+		"Fight through a 20-mission story campaign, take on the Daily Challenge, pass one phone around, or go online for duels, team battles, a ranked ladder and a six-tank Battle Royale."
+	],
+	"stats": [
+		["158", "weapons"],
+		["39", "tanks"],
+		["20", "story missions"],
+		["11", "biomes"],
+		["6", "-tank Battle Royale"]
+	],
+	"features": [
+		{ "title": "158 weapons", "text": "Shells, cluster bombs, lasers, airstrikes and nukes, with terrain that craters where they land." },
+		{ "title": "39 tanks, each its own", "text": "Scouts, heavies, artillery, support and specialists, each with its own perks and signature ability. Upgrade them, fit modules and paint them your way." },
+		{ "title": "A 20-mission campaign", "text": "Three chapters across farmland, a drowned coast and the glass desert, with a boss tank waiting at every chapter finale." },
+		{ "title": "Procedural battlefields", "text": "A fresh battlefield every match across 11 biomes, with weather, day and night, deep water and lava." },
+		{ "title": "Online duels and teams", "text": "Duel and Team Battle online, plus a ranked ladder that pairs commanders of similar power and rank." },
+		{ "title": "Battle Royale", "text": "Six commanders, one battlefield, and a zone that closes in round after round." },
+		{ "title": "Play at your pace", "text": "Async matches you can play whenever you have a minute, pass-and-play on one phone, or local Wi-Fi battles." },
+		{ "title": "Fair play", "text": "Online you bring the tank, upgrades and research you've earned. No paid loot boxes." }
+	],
+	"shots": {
+		"orientation": "landscape",
+		"width": 640,
+		"height": 360,
+		"items": [
+			{ "full": "img/shots/01_sight.webp", "thumb": "img/shots/01_sight_s.webp", "caption": "Line up the perfect shot" },
+			{ "full": "img/shots/02_nuke.webp", "thumb": "img/shots/02_nuke_s.webp", "caption": "158 weapons. Some of them nuclear." },
+			{ "full": "img/shots/03_airstrike.webp", "thumb": "img/shots/03_airstrike_s.webp", "caption": "Call in airstrikes and gunships" },
+			{ "full": "img/shots/04_garage.webp", "thumb": "img/shots/04_garage_s.webp", "caption": "39 tanks, each its own" },
+			{ "full": "img/shots/05_royale.webp", "thumb": "img/shots/05_royale_s.webp", "caption": "Battle Royale for 6" },
+			{ "full": "img/shots/06_campaign.webp", "thumb": "img/shots/06_campaign_s.webp", "caption": "20 story missions, bosses included" },
+			{ "full": "img/shots/07_techweb.webp", "thumb": "img/shots/07_techweb_s.webp", "caption": "Research 273 upgrades" },
+			{ "full": "img/shots/08_radar.webp", "thumb": "img/shots/08_radar_s.webp", "caption": "Read the battlefield on radar" }
+		]
+	},
+	"trailer": { "youtube": "pZm6-IpB9uE", "poster": "img/trailer.webp", "poster_fallback": "img/trailer.jpg" },
+	"stores": {
+		"google_play": { "live": false, "url": "https://play.google.com/store/apps/details?id=com.cratertanks.game" }
+	},
+	"links": [
+		{ "label": "Join the closed beta", "url": "https://cratertanks.com/beta/", "primary": true },
+		{ "label": "cratertanks.com", "url": "https://cratertanks.com/" }
+	],
+	"email": "support@cratertanks.com",
+	"privacy": { "external": "https://cratertanks.com/privacy" },
+	"terms": { "external": "https://cratertanks.com/terms" },
+	"data": [
+		"Offline progress and settings stay on your phone. Online play uses a guest account (commander name, progress, scores); signing in with Google or Facebook is optional.",
+		"To delete your online account and everything linked to it, open Settings ▸ Delete account in the game, or email us.",
+		"Bought something that didn't arrive? Use Restore purchases in the game's Store. Refunds go through Google Play."
+	]
+}

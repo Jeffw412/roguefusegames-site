@@ -1,0 +1,60 @@
+{
+	"order": 1,
+	"name": "Stormchaser",
+	"store_title": "Stormchaser",
+	"tagline": "Chase. Probe. Bail.",
+	"kicker": "Storm-chasing action for Android",
+	"status": "In development",
+	"status_kind": "dev",
+	"genre": "Arcade / idle storm chasing",
+	"platforms": ["Android"],
+	"package": "com.roguefusegames.stormchaser",
+	"accent": "#3ee07a",
+	"accent2": "#ff8a1f",
+	"icon": "img/icon_192.png",
+	"hero": { "type": "phone", "image": "img/shots/02.webp" },
+	"card_image": "img/card.webp",
+	"og_image": "img/card.jpg",
+	"summary": "Drive an armored chase truck into procedurally generated tornadoes. Get close, launch probes, film the funnel and get out before the storm lifts you.",
+	"description": [
+		"Every chase is a push-your-luck bet: the closer you get to the funnel, the more your data and footage pay, and the harder the storm pulls. Anchor down, deploy probes into the core, dodge the debris and bail before the truck leaves the ground.",
+		"No two storms behave the same. Tornadoes turn, speed up, split, wrap in rain and rope out across farmland, small towns, suburbs, cities and badlands, and they throw cows, cars and houses as they go. Spend your haul on upgrades that bolt visibly onto the truck, then hire chase crews who keep earning while you're away."
+	],
+	"stats": [
+		["1.5–3", "minute chases"],
+		["EF0–EF5", "tornadoes"],
+		["1", "thumb to play"]
+	],
+	"features": [
+		{ "title": "Push your luck", "text": "Closer pays more and is more dangerous. Hold the rings, hit the core with probes and bail at the last second." },
+		{ "title": "No two storms alike", "text": "Procedural tornadoes that turn, split, wrap in rain and rope out, on maps generated fresh for every chase." },
+		{ "title": "Everything goes flying", "text": "Trees, cars, cows, barns and houses get picked up and thrown, and the debris can hit your truck." },
+		{ "title": "The truck is the hero", "text": "Engine, armor, anchors, tires, probes and cameras: every upgrade shows on the truck, tier after tier." },
+		{ "title": "Crews and radar", "text": "Hire chase crews and build stations that keep chasing storms and earning while the app is closed." },
+		{ "title": "Short sessions", "text": "A chase lasts 90 to 180 seconds and plays one-handed in portrait." }
+	],
+	"shots": {
+		"orientation": "portrait",
+		"width": 360,
+		"height": 780,
+		"items": [
+			{ "full": "img/shots/01.webp", "thumb": "img/shots/01_s.webp", "caption": "Get close to an EF4 wedge" },
+			{ "full": "img/shots/02.webp", "thumb": "img/shots/02_s.webp", "caption": "Probe the core, ride out the gusts" },
+			{ "full": "img/shots/03.webp", "thumb": "img/shots/03_s.webp", "caption": "Cities, cars and flying debris" },
+			{ "full": "img/shots/04.webp", "thumb": "img/shots/04_s.webp", "caption": "Chase across the badlands" },
+			{ "full": "img/shots/05.webp", "thumb": "img/shots/05_s.webp", "caption": "Storms in the delta bayou" },
+			{ "full": "img/shots/06.webp", "thumb": "img/shots/06_s.webp", "caption": "Every upgrade bolts onto the truck" },
+			{ "full": "img/shots/07.webp", "thumb": "img/shots/07_s.webp", "caption": "Bank the haul, then fix the truck" }
+		]
+	},
+	"stores": {
+		"google_play": { "live": false, "url": "https://play.google.com/store/apps/details?id=com.roguefusegames.stormchaser" }
+	},
+	"privacy": { "file": "privacy.html", "effective": "November 4, 2026" },
+	"terms": { "file": "terms.html", "effective": "November 4, 2026" },
+	"data": [
+		"Your progress is saved only on your phone. There's no account, so uninstalling the game or clearing its storage deletes it, and we can't restore it.",
+		"To change your ad privacy choices, open Setup ▸ Privacy in the game.",
+		"Bought something that didn't arrive? Use Restore purchases in the game's Store or Setup. Refunds go through Google Play."
+	]
+}
