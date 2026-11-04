@@ -18,7 +18,7 @@ node build.mjs --serve    # build, then preview on http://localhost:8080
 | `games/<slug>/game.json` | One game: name, tagline, status, colours, description, features, screenshots, store links, policies |
 | `games/<slug>/privacy.html`, `terms.html` | The game's policy text as an HTML fragment. `{{name}}`, `{{studio}}`, `{{email}}` are filled in at build time |
 | `games/<slug>/img/` | The game's icon, card and hero art, screenshots (copied to `/<slug>/img/`) |
-| `static/` | Copied as-is: `style.css`, `game.js`, fonts (OFL), studio logo and icons |
+| `static/` | Copied as-is: `style.css`, `game.js`, fonts (OFL), and `img/`: the studio emblem, banners and icons (made from the owner's originals in Pictures: "Rogue Fuse Gaming Emblem", "Rogue Fuse Games_ Apocalyptic Battlefield Banner", "RFG Rogue Fuse Games Warzone Banner") |
 | `build.mjs` | Page templates and the build |
 
 The URL of each game is its folder name: `https://roguefusegames.com/<slug>/`, with `/<slug>/privacy/` and

@@ -21,7 +21,7 @@
 	--text: #ecf0f7;
 	--dim: #9ba6b8;
 	--faint: #6c7789;
-	--ember: #ff7a1a;
+	--ember: #ff6418;
 	--gold: #ffc94d;
 	--accent: var(--ember);
 	--accent2: var(--gold);
@@ -65,7 +65,7 @@ header.site {
 }
 header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; white-space: nowrap; }
-.brand img { width: 34px; height: 34px; }
+.brand img { width: 40px; height: 40px; border-radius: 50%; }
 .brand span { font-family: var(--display); font-size: 17px; letter-spacing: 0.03em; text-transform: uppercase; }
 .brand span b { font-weight: 400; color: var(--ember); }
 header.site nav { display: flex; gap: 4px; }
@@ -141,46 +141,16 @@ a.play-badge:hover { color: var(--text); border-color: rgba(255, 255, 255, 0.6);
 .pill.dev { color: #6cc7ff; }
 
 /* ===== Studio home ================================================================================================== */
-.studio-hero { position: relative; overflow: hidden; padding: 72px 0 56px; isolation: isolate; }
-.studio-hero::before {
-	content: "";
-	position: absolute;
-	inset: -20% -10% auto;
-	height: 140%;
-	z-index: -1;
-	background:
-		radial-gradient(40% 45% at 78% 30%, rgba(255, 122, 26, 0.22), transparent 70%),
-		radial-gradient(35% 40% at 15% 85%, rgba(62, 160, 255, 0.10), transparent 70%),
-		radial-gradient(60% 60% at 50% 0%, rgba(255, 201, 77, 0.06), transparent 70%);
-}
-.studio-hero::after {
-	content: "";
-	position: absolute;
-	inset: 0;
-	z-index: -1;
-	background-image: linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-	background-size: 44px 44px;
-	mask-image: radial-gradient(70% 70% at 50% 40%, #000 30%, transparent 75%);
-	-webkit-mask-image: radial-gradient(70% 70% at 50% 40%, #000 30%, transparent 75%);
-}
-.studio-hero .wrap { display: grid; gap: 36px; align-items: center; }
-@media (min-width: 900px) { .studio-hero .wrap { grid-template-columns: 1.25fr 0.75fr; } .studio-hero { padding: 104px 0 88px; } }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.studio-hero { position: relative; isolation: isolate; }
+.studio-hero .banner { position: relative; display: block; background: #000; }
+.studio-hero .banner img { width: 100%; height: auto; max-height: 78vh; object-fit: cover; object-position: 35% 50%; }
+.studio-hero .banner::after { content: ""; position: absolute; inset: auto 0 0; height: 38%; background: linear-gradient(180deg, transparent, var(--bg)); pointer-events: none; }
+.studio-hero .intro { position: relative; z-index: 1; margin-top: -28px; padding-bottom: 20px; text-align: center; }
+.studio-hero .intro .cta-row { justify-content: center; }
+.studio-hero .lead { margin: 0 auto; max-width: 680px; font-size: 19px; color: var(--dim); }
+@media (min-width: 900px) { .studio-hero .intro { margin-top: -64px; } .studio-hero .lead { font-size: 20px; } }
 .kicker { margin: 0 0 14px; font: 700 15px/1.3 var(--ui); letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); }
-.studio-hero h1 {
-	margin: 0;
-	font: 400 clamp(44px, 10.5vw, 96px)/0.95 var(--display);
-	letter-spacing: 0.01em;
-	text-transform: uppercase;
-}
-.studio-hero h1 .l2 { display: block; color: transparent; background: linear-gradient(92deg, var(--gold), var(--ember) 60%, #ff4d1a); -webkit-background-clip: text; background-clip: text; }
-.studio-hero .lead { margin: 22px 0 0; max-width: 600px; font-size: 19px; color: var(--dim); }
-.studio-hero .lead strong { color: var(--text); font-weight: 600; }
-.hero-mark { position: relative; justify-self: center; width: min(300px, 64vw); aspect-ratio: 1; }
-.hero-mark img { width: 100%; height: 100%; filter: drop-shadow(0 30px 60px rgba(255, 122, 26, 0.25)); }
-.hero-mark::before { content: ""; position: absolute; inset: 14%; border-radius: 50%; background: radial-gradient(circle, rgba(255, 150, 40, 0.35), transparent 65%); filter: blur(30px); animation: ember 3.2s ease-in-out infinite alternate; }
-@keyframes ember { from { opacity: 0.55; transform: scale(0.92); } to { opacity: 1; transform: scale(1.06); } }
-@media (prefers-reduced-motion: reduce) { .hero-mark::before { animation: none; } }
-@media (max-width: 899px) { .hero-mark { display: none; } }
 
 .section { padding: 44px 0; }
 .sec-head { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 22px; }

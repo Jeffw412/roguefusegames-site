@@ -91,9 +91,9 @@ function head({ title, description, canonical, image, accent, accent2, extra = "
 <meta property="og:url" content="${esc(canonical)}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
-<meta property="og:image" content="${esc(image || abs("/img/og.png"))}">
+<meta property="og:image" content="${esc(image || abs("/img/og.jpg"))}">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/img/mark.svg" type="image/svg+xml">
+<link rel="icon" href="/img/icon_180.png" type="image/png" sizes="180x180">
 <link rel="icon" href="/img/icon_96.png" type="image/png" sizes="96x96">
 <link rel="apple-touch-icon" href="/img/icon_180.png">
 <link rel="preload" href="/fonts/russo-one.woff2" as="font" type="font/woff2" crossorigin>
@@ -107,7 +107,7 @@ function header(current) {
 	return `<body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site"><div class="wrap">
-	<a class="brand" href="/" aria-label="${esc(site.studio)} home"><img src="/img/mark.svg" alt="" width="34" height="34"><span>Rogue <b>Fuse</b></span></a>
+	<a class="brand" href="/" aria-label="${esc(site.studio)} home"><img src="/img/emblem_128.webp" alt="" width="40" height="40"><span>Rogue <b>Fuse</b></span></a>
 	<nav aria-label="Site">${nav.map(([href, label, key]) => `<a href="${href}"${key === current ? ' aria-current="page"' : ""}>${label}</a>`).join("")}</nav>
 </div></header>`;
 }
@@ -115,7 +115,7 @@ function header(current) {
 function footer(games) {
 	return `<footer class="site"><div class="wrap">
 	<div class="about">
-		<a class="brand" href="/"><img src="/img/mark.svg" alt="" width="34" height="34"><span>Rogue <b>Fuse</b> Games</span></a>
+		<a class="brand" href="/"><img src="/img/emblem_128.webp" alt="" width="40" height="40"><span>Rogue <b>Fuse</b> Games</span></a>
 		<p>${esc(site.tagline)}</p>
 	</div>
 	<div>
@@ -180,17 +180,19 @@ function homePage(games) {
 	].map(([ico, t, p]) => `<li><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true">${VALUE_ICONS[ico]}</svg></span><h3>${t}</h3><p>${p}</p></li>`).join("");
 	const body = `
 <section class="studio-hero">
-	<div class="wrap">
-		<div>
-			<p class="kicker">Independent game studio</p>
-			<h1>Rogue Fuse<span class="l2">Games</span></h1>
-			<p class="lead">${esc(site.lead)}</p>
-			<div class="cta-row">
-				<a class="cta primary" href="#games">Our games ${ICONS.arrow}</a>
-				<a class="cta ghost" href="/support/">Support &amp; contact</a>
-			</div>
+	<picture class="banner">
+		<source media="(max-width: 700px)" srcset="/img/banner_169.webp" width="1000" height="563">
+		<source media="(max-width: 1300px)" srcset="/img/banner_wide_1200.webp" width="1200" height="480">
+		<img src="/img/banner_wide.webp" alt="Rogue Fuse Games" width="1983" height="793" fetchpriority="high" decoding="async">
+	</picture>
+	<div class="wrap intro">
+		<h1 class="sr-only">Rogue Fuse Games</h1>
+		<p class="kicker">Independent game studio</p>
+		<p class="lead">${esc(site.lead)}</p>
+		<div class="cta-row">
+			<a class="cta primary" href="#games">Our games ${ICONS.arrow}</a>
+			<a class="cta ghost" href="/support/">Support &amp; contact</a>
 		</div>
-		<div class="hero-mark"><img src="/img/mark.svg" alt="" width="300" height="300"></div>
 	</div>
 </section>
 <section class="section" id="games">
