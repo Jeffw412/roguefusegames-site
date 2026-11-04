@@ -1,0 +1,117 @@
+{
+	"order": 3,
+	"name": "Project Heist",
+	"store_title": "Project Heist",
+	"tagline": "Plan it. Crack it. Get out clean.",
+	"kicker": "Heist puzzle adventure for Android · working title",
+	"status": "In development",
+	"status_kind": "dev",
+	"genre": "Heist puzzle / stealth",
+	"platforms": [
+		"Android"
+	],
+	"accent": "#38d6e8",
+	"accent2": "#ffc94d",
+	"icon": "img/icon_192.png",
+	"hero": {
+		"type": "art",
+		"image": "img/hero.webp",
+		"mobile": "img/hero_m.webp",
+		"fallback": "img/hero.jpg",
+		"position": "60% 50%"
+	},
+	"card_image": "img/shots/01_s.webp",
+	"og_image": "img/hero.jpg",
+	"summary": "Run a crew of quirky specialists from a secret HQ. Scout the target, slip past guards and cameras, crack hands-on 3D locks, safes and vaults, and get out clean.",
+	"description": [
+		"You're the Mastermind. Pick a target on the city map, gather intel to reveal its floors and hidden rooms, choose your way in (a window, a skylight, the patio, the front door) and bring the right crew for the job.",
+		"Then play the heist live: steer your heroes past patrols and cameras, and every lock, keypad, laser grid, safe and vault is a hands-on 3D puzzle up close. If it goes wrong, it's a chase across the rooftops or through the streets, not a shoot-out."
+	],
+	"features": [
+		{
+			"title": "Real-time heists",
+			"text": "Steer your heroes room by room, dodging guards, cameras and alarms, with the floor plan revealed by the intel you gather."
+		},
+		{
+			"title": "Hands-on 3D puzzles",
+			"text": "Pick tumbler locks, crack safes by feel, reroute patch panels, beat keypads, bend laser grids and open the vault."
+		},
+		{
+			"title": "A crew of specialists",
+			"text": "Eleven quirky heroes, each with their own skills: climbers, hackers, talkers, safecrackers and getaway drivers."
+		},
+		{
+			"title": "Talk your way in",
+			"text": "Bluff the front desk, work an inside contact and lift a key card from a guard's pocket."
+		},
+		{
+			"title": "Getaways, not gunfights",
+			"text": "Botched a job? Run the rooftops, rappel down the building or lose the police in a car pursuit."
+		},
+		{
+			"title": "Your secret HQ",
+			"text": "Grow a hideout behind a neon sign: new rooms unlock new crew, gear, research and bigger targets."
+		}
+	],
+	"shots": {
+		"orientation": "landscape",
+		"width": 640,
+		"height": 360,
+		"items": [
+			{
+				"full": "img/shots/01.webp",
+				"thumb": "img/shots/01_s.webp",
+				"caption": "Drop in through the skylight"
+			},
+			{
+				"full": "img/shots/02.webp",
+				"thumb": "img/shots/02_s.webp",
+				"caption": "Steer the crew past guards and cameras"
+			},
+			{
+				"full": "img/shots/03.webp",
+				"thumb": "img/shots/03_s.webp",
+				"caption": "Pick the lock, pin by pin"
+			},
+			{
+				"full": "img/shots/04.webp",
+				"thumb": "img/shots/04_s.webp",
+				"caption": "Crack the safe by feel"
+			},
+			{
+				"full": "img/shots/05.webp",
+				"thumb": "img/shots/05_s.webp",
+				"caption": "Lift the key card"
+			},
+			{
+				"full": "img/shots/06.webp",
+				"thumb": "img/shots/06_s.webp",
+				"caption": "Open the vault"
+			},
+			{
+				"full": "img/shots/07.webp",
+				"thumb": "img/shots/07_s.webp",
+				"caption": "Lose the police"
+			},
+			{
+				"full": "img/shots/08.webp",
+				"thumb": "img/shots/08_s.webp",
+				"caption": "Build your secret HQ"
+			}
+		]
+	},
+	"stores": {
+		"google_play": {
+			"live": false
+		}
+	},
+	"privacy": {
+		"pending": true
+	},
+	"terms": {
+		"pending": true
+	},
+	"data": [
+		"Project Heist is still in development. Its privacy policy and terms will be published here before it launches."
+	]
+}

@@ -47,7 +47,10 @@ const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replac
 const asset = (g, rel) => g.base + rel;
 const abs = (p) => site.url + p;
 const fill = (text, vars) => text.replace(/\{\{(\w+)\}\}/g, (m, k) => (k in vars ? vars[k] : m));
-const policyUrl = (g, kind) => (g[kind].external ? g[kind].external : `${g.base}${kind}/`);
+// A policy is its own page (/<slug>/privacy/), hosted elsewhere ("external"), or not written yet ("pending": before launch).
+const policyUrl = (g, kind) => (g[kind].pending ? null : g[kind].external || `${g.base}${kind}/`);
+// Links to a game's privacy policy and terms, or nothing while they're pending.
+const policyLinks = (g, cls, labels = ["Privacy Policy", "Terms of Use"]) => ["privacy", "terms"].filter((k) => policyUrl(g, k)).map((k, i) => `<a${cls ? ` class="${cls}"` : ""} href="${esc(policyUrl(g, k))}">${labels[k === "privacy" ? 0 : 1]}</a>`).join("");
 
 const ICONS = {
 	play: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5v17L20 12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>',
@@ -290,7 +293,7 @@ function gamePage(g, games) {
 		["Developer", esc(site.studio)],
 		g.package ? ["Package", `<code>${esc(g.package)}</code>`] : null,
 		["Support", `<a href="mailto:${esc(g.email)}">${esc(g.email)}</a>`],
-		["Legal", `<a href="${esc(policyUrl(g, "privacy"))}">Privacy Policy</a> · <a href="${esc(policyUrl(g, "terms"))}">Terms</a>`],
+		["Legal", policyUrl(g, "privacy") ? `<a href="${esc(policyUrl(g, "privacy"))}">Privacy Policy</a> · <a href="${esc(policyUrl(g, "terms"))}">Terms</a>` : "Privacy policy and terms before launch"],
 	].filter(Boolean).filter(([, v]) => v).map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("");
 	const body = `${hero}
 ${stats}
@@ -304,7 +307,7 @@ ${stats}
 	<div class="wrap">
 		<div class="band-cta">
 			<div><h2>Help with ${esc(g.name)}</h2><p>Bugs, purchases, privacy questions: email us and include your phone model.</p></div>
-			<div class="cta-row"><a class="cta primary" href="mailto:${esc(g.email)}?subject=${encodeURIComponent(g.name)}">${ICONS.mail} Email support</a><a class="cta ghost" href="${esc(policyUrl(g, "privacy"))}">Privacy</a><a class="cta ghost" href="${esc(policyUrl(g, "terms"))}">Terms</a></div>
+			<div class="cta-row"><a class="cta primary" href="mailto:${esc(g.email)}?subject=${encodeURIComponent(g.name)}">${ICONS.mail} Email support</a>${policyLinks(g, "cta ghost", ["Privacy", "Terms"])}</div>
 		</div>
 	</div>
 </section>
@@ -402,7 +405,7 @@ function supportPage(games) {
 	<h3><img src="${asset(g, g.icon)}" alt="" width="40" height="40">${esc(g.name)}</h3>
 	<ul>${(g.data || []).map((d) => `<li>${esc(d)}</li>`).join("")}</ul>
 	<p>Email <a href="mailto:${esc(g.email)}?subject=${encodeURIComponent(g.name)}">${esc(g.email)}</a></p>
-	<div class="legal-links"><a href="${g.base}">Game page</a><a href="${esc(policyUrl(g, "privacy"))}">Privacy Policy</a><a href="${esc(policyUrl(g, "terms"))}">Terms of Use</a></div>
+	<div class="legal-links"><a href="${g.base}">Game page</a>${policyLinks(g, "")}</div>
 </section>`).join("");
 	const body = `${crumbs(null, "Support")}
 <h1>Support &amp; contact</h1>
@@ -435,7 +438,7 @@ function sitePrivacyPage(games) {
 <h1>Website privacy</h1>
 <p class="updated">Effective November 4, 2026</p>
 <p>This notice covers the ${esc(site.domain)} website. Each game has its own privacy policy:
-${games.map((g) => `<a href="${esc(policyUrl(g, "privacy"))}">${esc(g.name)}</a>`).join(", ")}.</p>
+${games.filter((g) => policyUrl(g, "privacy")).map((g) => `<a href="${esc(policyUrl(g, "privacy"))}">${esc(g.name)}</a>`).join(", ")}.</p>
 <h2>What this site collects</h2>
 <p>Nothing on purpose. The site has no accounts, forms, cookies, analytics, ads or tracking pixels, and it loads no
 fonts or scripts from other companies. Videos are embedded only after you press play, from youtube-nocookie.com.</p>
@@ -480,7 +483,7 @@ function build() {
 		fs.cpSync(path.join(g.dir, "img"), path.join(DIST, g.slug, "img"), { recursive: true });
 		write(`${g.slug}/index.html`, gamePage(g, games));
 		urls.push(g.base);
-		for (const kind of ["privacy", "terms"]) {
+		for (const kind of ["privacy", "terms"].filter((k) => !g[k].pending)) {
 			write(`${g.slug}/${kind}/index.html`, policyPage(g, kind, games));
 			if (!g[kind].external) {
 				urls.push(`${g.base}${kind}/`);
