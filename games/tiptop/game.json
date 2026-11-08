@@ -1,0 +1,60 @@
+{
+	"order": 1,
+	"name": "TipTop",
+	"tagline": "Tip it. Stack it. Pop it.",
+	"kicker": "A 3D tower-tipping puzzle for Android",
+	"status": "In development",
+	"status_kind": "dev",
+	"genre": "Puzzle / 3D tower-stacking colour match",
+	"platforms": ["Android"],
+	"package": "com.roguefusegames.tiptop",
+	"accent": "#e8c27a",
+	"accent2": "#3ec6c0",
+	"icon": "img/icon_192.png",
+	"hero": { "type": "phone", "image": "img/shots/02.webp" },
+	"card_image": "img/card.webp",
+	"og_image": "img/card.jpg",
+	"summary": "A 3D tower-stacking colour puzzle. Tip a tower over, scatter its blocks one per cell along the way, and line up three or more of the same colour to pop them. Clear the board within the tips allowed.",
+	"description": [
+		"Every tip pushes a tower over in one direction, and its blocks scatter one per cell along the way. Line up three or more blocks of the same colour and they pop. Plan your tips, set up combos and chain multipliers, and clear the board before you run out of tips.",
+		"The Journey starts with hand-made levels, then keeps going with procedurally generated ones that get harder and harder, with no maximum level. Play the Daily Puzzle, the same board for everyone in the world each day, keep your streak going and share your result. Take on the weekly 90-second Blitz, or see how long you can last in Endless.",
+		"Climb the leaderboards and earn achievements through Google Play Games. Boosters never make a puzzle unsolvable, and they're switched off in the ranked modes (Daily, Blitz and Endless) so the leaderboards stay fair. Every block shows a shape as well as a colour, so the game is colour-blind friendly."
+	],
+	"stats": [
+		["4", "ways to play"],
+		["∞", "Journey levels, no maximum"],
+		["90 s", "weekly Blitz"]
+	],
+	"features": [
+		{ "title": "Tip, scatter, pop", "text": "Each tip pushes a tower over and scatters its blocks one per cell. Line up three or more of a colour to pop them." },
+		{ "title": "A Journey with no end", "text": "Hand-made early levels, then procedurally generated ones that keep getting harder, with no maximum level." },
+		{ "title": "Daily Puzzle", "text": "The same board for everyone worldwide each day, with a streak to keep and a result to share." },
+		{ "title": "Blitz and Endless", "text": "A 90-second challenge every week, and an Endless mode where you survive as long as you can." },
+		{ "title": "Leaderboards and achievements", "text": "Compete and collect achievements through Google Play Games." },
+		{ "title": "Combos and chains", "text": "Combos, chain multipliers, win streaks, daily quests and trophies to chase." },
+		{ "title": "Boosters that play fair", "text": "Hint, Undo, Grab, Swap and Color Bomb never make a puzzle unsolvable, and they're off in ranked modes." },
+		{ "title": "Colour-blind friendly", "text": "Every block shows both a colour and a shape, so you can always tell them apart." }
+	],
+	"shots": {
+		"orientation": "portrait",
+		"width": 360,
+		"height": 780,
+		"items": [
+			{ "full": "img/shots/01.webp", "thumb": "img/shots/01_s.webp", "caption": "Tip a tower and scatter its blocks" },
+			{ "full": "img/shots/02.webp", "thumb": "img/shots/02_s.webp", "caption": "Line up three of a colour to pop them" },
+			{ "full": "img/shots/03.webp", "thumb": "img/shots/03_s.webp", "caption": "The Daily Puzzle, the same for everyone" },
+			{ "full": "img/shots/04.webp", "thumb": "img/shots/04_s.webp", "caption": "Beat the clock in the weekly Blitz" },
+			{ "full": "img/shots/05.webp", "thumb": "img/shots/05_s.webp", "caption": "Boosters for when you're stuck" }
+		]
+	},
+	"stores": {
+		"google_play": { "live": false, "url": "https://play.google.com/store/apps/details?id=com.roguefusegames.tiptop" }
+	},
+	"privacy": { "file": "privacy.html", "effective": "November 8, 2026" },
+	"terms": { "file": "terms.html", "effective": "November 8, 2026" },
+	"data": [
+		"Your progress is saved only on your phone. There's no account, so uninstalling the game or clearing its storage deletes it, and we can't restore it. Leaderboard scores and achievements are kept by Google Play Games.",
+		"To change your ad privacy choices, open Settings ▸ Privacy in the game.",
+		"Bought something that didn't arrive? Use Restore purchases in the game. Refunds go through Google Play."
+	]
+}
