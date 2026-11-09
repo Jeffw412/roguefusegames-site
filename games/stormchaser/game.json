@@ -51,11 +51,11 @@
 	"stores": {
 		"google_play": { "live": false, "url": "https://play.google.com/store/apps/details?id=com.roguefusegames.stormchaser" }
 	},
-	"privacy": { "file": "privacy.html", "effective": "November 4, 2026" },
+	"privacy": { "file": "privacy.html", "effective": "November 9, 2026" },
 	"terms": { "file": "terms.html", "effective": "November 4, 2026" },
 	"data": [
-		"Your progress is saved only on your phone. There's no account, so uninstalling the game or clearing its storage deletes it, and we can't restore it.",
-		"To change your ad privacy choices, open Setup ▸ Privacy in the game.",
+		"Your progress is saved on your phone. There's no account; if Android backup is on, Android can restore the save on a new phone. Otherwise uninstalling the game or clearing its storage deletes it, and we can't restore it.",
+		"To change your ad privacy choices, open Setup ▸ Privacy options in the game. Usage statistics and crash reports can be turned off in Setup.",
 		"Bought something that didn't arrive? Use Restore purchases in the game's Store or Setup. Refunds go through Google Play."
 	]
 }
