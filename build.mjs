@@ -46,6 +46,12 @@ function loadGames() {
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const asset = (g, rel) => g.base + rel;
 const abs = (p) => site.url + p;
+// Wide-screen gallery columns: landscape 4; portrait up to 7 in a row, balanced into full rows (8 shots: 2 rows of 4).
+const galleryCols = (g) => {
+	const n = g.shots.items.length;
+	if (g.shots.orientation !== "portrait") return 4;
+	return n <= 7 ? Math.max(n, 1) : Math.ceil(n / Math.ceil(n / 7));
+};
 const fill = (text, vars) => text.replace(/\{\{(\w+)\}\}/g, (m, k) => (k in vars ? vars[k] : m));
 // A policy is its own page (/<slug>/privacy/), hosted elsewhere ("external"), or not written yet ("pending": before launch).
 const policyUrl = (g, kind) => (g[kind].pending ? null : g[kind].external || `${g.base}${kind}/`);
@@ -247,10 +253,12 @@ function gamePage(g, games) {
 	<div class="wrap"><div class="text">${heroText(g)}</div></div>
 </section>`;
 	} else {
+		// the screen keeps the screenshot's own shape (hero.width/height, default a 720x1560 phone)
+		const hw = g.hero.width || 720, hh = g.hero.height || 1560;
 		hero = `<section class="game-hero phone">
 	<div class="wrap">
 		<div class="text">${heroText(g)}</div>
-		<div class="phone-frame"><img src="${asset(g, g.hero.image)}" alt="${esc(g.name)} gameplay" width="720" height="1560" fetchpriority="high" decoding="async"></div>
+		<div class="phone-frame"><img src="${asset(g, g.hero.image)}" alt="${esc(g.name)} gameplay" width="${hw}" height="${hh}" style="aspect-ratio: ${hw} / ${hh}" fetchpriority="high" decoding="async"></div>
 	</div>
 </section>`;
 	}
@@ -272,7 +280,7 @@ function gamePage(g, games) {
 <section class="section" id="screenshots">
 	<div class="wrap">
 		<div class="sec-head"><h2 class="sec-title">Screenshots</h2></div>
-		<ul class="gallery ${g.shots.orientation === "portrait" ? "portrait" : "landscape"}" id="gallery">${g.shots.items.map((s) => `
+		<ul class="gallery ${g.shots.orientation === "portrait" ? "portrait" : "landscape"}" id="gallery" style="--cols: ${galleryCols(g)}">${g.shots.items.map((s) => `
 			<li><a href="${asset(g, s.full)}"><img src="${asset(g, s.thumb)}" width="${g.shots.width}" height="${g.shots.height}" loading="lazy" decoding="async" alt="${esc(s.caption)}"><span class="cap">${esc(s.caption)}</span></a></li>`).join("")}
 		</ul>
 	</div>

@@ -11,7 +11,7 @@
 	"accent": "#e8c27a",
 	"accent2": "#3ec6c0",
 	"icon": "img/icon_192.png",
-	"hero": { "type": "phone", "image": "img/shots/02.webp" },
+	"hero": { "type": "phone", "image": "img/shots/01.webp", "width": 720, "height": 1280 },
 	"card_image": "img/card.webp",
 	"og_image": "img/card.jpg",
 	"summary": "A 3D tower-stacking colour puzzle. Tip a tower over, scatter its blocks one per cell along the way, and line up three or more of the same colour to pop them. Clear the board within the tips allowed.",
@@ -38,13 +38,16 @@
 	"shots": {
 		"orientation": "portrait",
 		"width": 360,
-		"height": 780,
+		"height": 640,
 		"items": [
-			{ "full": "img/shots/01.webp", "thumb": "img/shots/01_s.webp", "caption": "Tip a tower and scatter its blocks" },
-			{ "full": "img/shots/02.webp", "thumb": "img/shots/02_s.webp", "caption": "Line up three of a colour to pop them" },
-			{ "full": "img/shots/03.webp", "thumb": "img/shots/03_s.webp", "caption": "The Daily Puzzle, the same for everyone" },
-			{ "full": "img/shots/04.webp", "thumb": "img/shots/04_s.webp", "caption": "Beat the clock in the weekly Blitz" },
-			{ "full": "img/shots/05.webp", "thumb": "img/shots/05_s.webp", "caption": "Boosters for when you're stuck" }
+			{ "full": "img/shots/01.webp", "thumb": "img/shots/01_s.webp", "caption": "Tip towers, pop three of a colour, chain combos" },
+			{ "full": "img/shots/02.webp", "thumb": "img/shots/02_s.webp", "caption": "Glowing Neon tiles in the Neon City world" },
+			{ "full": "img/shots/03.webp", "thumb": "img/shots/03_s.webp", "caption": "Journey, Daily, Blitz and Endless from one home screen" },
+			{ "full": "img/shots/04.webp", "thumb": "img/shots/04_s.webp", "caption": "Chain pops back to back for bigger multipliers" },
+			{ "full": "img/shots/05.webp", "thumb": "img/shots/05_s.webp", "caption": "Endless: blocks keep dropping, keep it standing" },
+			{ "full": "img/shots/06.webp", "thumb": "img/shots/06_s.webp", "caption": "Fill the power meter to earn free boosters" },
+			{ "full": "img/shots/07.webp", "thumb": "img/shots/07_s.webp", "caption": "Customize your tiles, boards and backgrounds" },
+			{ "full": "img/shots/08.webp", "thumb": "img/shots/08_s.webp", "caption": "Finish at par for a Perfect and three stars" }
 		]
 	},
 	"stores": {

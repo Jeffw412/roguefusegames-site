@@ -30,7 +30,8 @@ The URL of each game is its folder name: `https://roguefusegames.com/<slug>/`, w
 1. Copy `games/stormchaser/` to `games/<new-slug>/`.
 2. Edit `game.json`. Required: `name`, `tagline`, `summary`, `status`, `status_kind` (`dev`, `beta` or `live`), `icon`,
    `privacy`, `terms`. `order` sets its place on the home page. `hero.type` is `phone` (a portrait screenshot in a phone
-   frame) or `art` (landscape key art behind the text). `shots.orientation` is `portrait` or `landscape`.
+   frame; set `hero.width` and `hero.height` if it isn't 720 x 1560) or `art` (landscape key art behind the text).
+   `shots.orientation` is `portrait` or `landscape`.
    `"hidden": true` keeps a game off the site.
 3. Replace `img/` and rewrite `privacy.html` / `terms.html` for what that game really does. A game whose policies live
    on its own site uses `"privacy": { "external": "https://..." }` instead (as Crater Tanks does), and its

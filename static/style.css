@@ -239,8 +239,8 @@ a.play-badge:hover { color: var(--text); border-color: rgba(255, 255, 255, 0.6);
 @media (min-width: 640px) { .gallery.portrait { grid-auto-columns: 30%; } .gallery.landscape { grid-auto-columns: 46%; } }
 @media (min-width: 1000px) {
 	.gallery { grid-auto-flow: row; overflow: visible; }
-	.gallery.landscape { grid-template-columns: repeat(4, 1fr); }
-	.gallery.portrait { grid-template-columns: repeat(7, 1fr); }
+	.gallery.landscape { grid-template-columns: repeat(var(--cols, 4), 1fr); }
+	.gallery.portrait { grid-template-columns: repeat(var(--cols, 7), 1fr); }
 }
 .gallery li { scroll-snap-align: start; }
 .gallery a { position: relative; display: block; text-decoration: none; overflow: hidden; border-radius: 14px; border: 1px solid var(--line); background: #000; }
