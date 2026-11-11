@@ -57,6 +57,7 @@
 	"data": [
 		"Your progress and settings are saved on your phone. Online play uses an anonymous account tied to a random ID for your device: no e-mail, no sign-in.",
 		"To delete your online account and everything linked to it (name, friends, challenges, recorded runs, ranked history), open Settings ▸ Delete online account in the game, or email us from any address with your racer name and friend code. Progress saved on your phone stays until you uninstall the game.",
-		"The game has no ads and no analytics. Bought something that didn't arrive? Email us with the Google Play order number. Refunds go through Google Play."
+		"The free version shows Google AdMob ads: optional rewarded ads and occasional ad breaks between finished runs, never during a race. Remove Ads ($6.99) turns them off. There's no analytics SDK.",
+		"Bought something that didn't arrive? Use Settings ▸ Restore purchases, or email us with the Google Play order number. Refunds go through Google Play."
 	]
 }
