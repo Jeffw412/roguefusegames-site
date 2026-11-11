@@ -1,0 +1,62 @@
+{
+	"order": 1,
+	"name": "Marble Royale",
+	"store_title": "Marble Royale",
+	"tagline": "Build traps. Race rivals. Last marble wins.",
+	"kicker": "Async marble battle royale for Android",
+	"status": "In testing",
+	"status_kind": "beta",
+	"genre": "Arcade / async marble battle royale",
+	"platforms": ["Android"],
+	"package": "com.roguefusegames.marbleroyale",
+	"accent": "#ffd640",
+	"accent2": "#ff468c",
+	"icon": "img/icon_192.png",
+	"hero": { "type": "phone", "image": "img/hero.webp" },
+	"card_image": "img/card.webp",
+	"og_image": "img/card.jpg",
+	"summary": "Eight marbles, four rounds, one crown. Everyone drops traps on the same track at the same time, then the race reveals what you built. Tilt to steer, dodge the traps and be the last marble rolling.",
+	"description": [
+		"Every round starts with a build: pick a trap and drop it on the course. Bumpers, mud pits, spinners, peg fields, spike strips and more. Then the track is revealed with everyone's traps in place, and the race is on. Only the fastest marbles qualify for the next round, and a trap that cracks a rival pays off.",
+		"Tilt your phone to steer. Carve lines through the bends, ride wall rides, loops, tubes and corkscrews, grab sparks for a dash and brace before a hit. Each round runs on a fresh course in one of 15 worlds, from deep space to a toy room.",
+		"Matches are asynchronous: the other marbles are recorded runs of real players, so you never wait in a lobby. Add friends with a code, send challenges, climb the ranked leagues, and collect skins, trails and shatter effects as you go."
+	],
+	"stats": [
+		["8", "marbles per match"],
+		["4", "rounds to the crown"],
+		["15", "worlds"]
+	],
+	"features": [
+		{ "title": "Trap your rivals", "text": "Everyone builds at the same time, then the reveal shows the whole course. Your traps keep paying while you race." },
+		{ "title": "Tilt to steer", "text": "Lean the phone to carve the bends, then tap DASH to overtake and hold BRACE to survive a hit." },
+		{ "title": "A new track every round", "text": "Courses are generated for every round: loops, corkscrews, tubes, bowls, funnels, plinko boards and more." },
+		{ "title": "15 worlds", "text": "Race through deep space, an ice cave, a clockwork workshop, a toy room, a volcano forge, a haunted manor and ten more." },
+		{ "title": "No waiting", "text": "Rivals are recorded runs of real players, so a match starts the moment you tap PLAY. Your own runs race in other players' matches." },
+		{ "title": "Friends and leagues", "text": "Add friends with a code, send challenges, climb the ranked leagues and collect skins, trails and shatter effects." }
+	],
+	"shots": {
+		"orientation": "portrait",
+		"width": 360,
+		"height": 640,
+		"items": [
+			{ "full": "img/shots/01.webp", "thumb": "img/shots/01_s.webp", "caption": "Everyone builds the same track" },
+			{ "full": "img/shots/02.webp", "thumb": "img/shots/02_s.webp", "caption": "Pick a trap and drop it" },
+			{ "full": "img/shots/03.webp", "thumb": "img/shots/03_s.webp", "caption": "Tilt to steer through the plinko" },
+			{ "full": "img/shots/04.webp", "thumb": "img/shots/04_s.webp", "caption": "Shatter your rivals" },
+			{ "full": "img/shots/05.webp", "thumb": "img/shots/05_s.webp", "caption": "Loops and corkscrews" },
+			{ "full": "img/shots/06.webp", "thumb": "img/shots/06_s.webp", "caption": "Roulette bowl in deep space" },
+			{ "full": "img/shots/07.webp", "thumb": "img/shots/07_s.webp", "caption": "Qualify to survive the round" },
+			{ "full": "img/shots/08.webp", "thumb": "img/shots/08_s.webp", "caption": "Daily quests and leagues" }
+		]
+	},
+	"stores": {
+		"google_play": { "live": false, "url": "https://play.google.com/store/apps/details?id=com.roguefusegames.marbleroyale" }
+	},
+	"privacy": { "file": "privacy.html", "effective": "November 11, 2026" },
+	"terms": { "file": "terms.html", "effective": "November 11, 2026" },
+	"data": [
+		"Your progress and settings are saved on your phone. Online play uses an anonymous account tied to a random ID for your device: no e-mail, no sign-in.",
+		"To delete your online account and everything linked to it (name, friends, challenges, recorded runs, ranked history), open Settings ▸ Delete online account in the game, or email us from any address with your racer name and friend code. Progress saved on your phone stays until you uninstall the game.",
+		"The game has no ads and no analytics. Bought something that didn't arrive? Email us with the Google Play order number. Refunds go through Google Play."
+	]
+}
