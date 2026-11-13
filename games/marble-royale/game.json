@@ -52,7 +52,7 @@
 	"stores": {
 		"google_play": { "live": false, "url": "https://play.google.com/store/apps/details?id=com.roguefusegames.marbleroyale" }
 	},
-	"privacy": { "file": "privacy.html", "effective": "November 11, 2026" },
+	"privacy": { "file": "privacy.html", "effective": "November 13, 2026" },
 	"terms": { "file": "terms.html", "effective": "November 11, 2026" },
 	"data": [
 		"Your progress and settings are saved on your phone. Online play uses an anonymous account tied to a random ID for your device: no e-mail, no sign-in.",
