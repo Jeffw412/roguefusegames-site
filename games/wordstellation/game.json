@@ -1,0 +1,67 @@
+{
+	"order": 2,
+	"name": "Wordstellation",
+	"store_title": "Wordstellation: Word Search",
+	"tagline": "Find the theme. Light up the sky.",
+	"kicker": "A themed word search for Android",
+	"status": "In development",
+	"status_kind": "dev",
+	"genre": "Word / themed word search",
+	"platforms": ["Android"],
+	"package": "com.roguefusegames.wordstellation",
+	"accent": "#ffc857",
+	"accent2": "#5cd6e6",
+	"icon": "img/icon_192.png",
+	"hero": { "type": "phone", "image": "img/shots/01.webp", "width": 720, "height": 1600 },
+	"copy": ["c"],
+	"card_image": "img/card.webp",
+	"og_image": "img/card.jpg",
+	"summary": "A themed word search where every letter is used. Each board is a patch of night sky and the letters are stars. Read the clue, trace the hidden theme words, and turn the board into a glowing constellation.",
+	"description": [
+		"One clue hints at the theme, like \"Counter intelligence\". Trace the theme words through neighbouring stars, in any direction and even around corners, and each word you find becomes a glowing line. One special word, the Polestar, names the theme and stretches from one edge of the sky to the other. Use every star and the board becomes a named constellation in your Star Atlas.",
+		"The Journey never runs out: every board is built on your phone from over 800 hand-written themes, each with far more words than one board needs, in several board sizes, and the game remembers which themes you've played. Play the Daily Sky, the same board for everyone each day, keep your streak and share a spoiler-free result.",
+		"It's calm and fair. There's no countdown, no lives and no way to lose a level. Ads never interrupt a puzzle, there are none in your first 20 levels, and one Remove Ads purchase removes every ad break and every upsell pop-up for good. Big letters, a text-size setting, high contrast, colour-blind-safe lines and a dyslexia-friendly font make it easy on every eye."
+	],
+	"stats": [
+		["800+", "hand-written themes"],
+		["∞", "Journey levels, no maximum"],
+		["1", "Daily Sky for everyone"]
+	],
+	"features": [
+		{ "title": "Every letter is a star", "text": "Each board's hidden words use every letter exactly once. When the last star is used, the sky names itself." },
+		{ "title": "Words that bend", "text": "Trace through neighbouring letters in any of eight directions, around corners and back again." },
+		{ "title": "The Polestar", "text": "One special word names the theme and stretches from one edge of the sky to the other." },
+		{ "title": "Daily Sky", "text": "The same board for everyone each day, with a streak to keep and a spoiler-free emoji grid to share." },
+		{ "title": "Bonus words earn hints", "text": "Spell other real words for stardust sparks that fill the meter for a free Telescope hint." },
+		{ "title": "A fair-play promise", "text": "No ads during a puzzle, none in your first 20 levels, and Remove Ads really removes every ad break and pop-up." },
+		{ "title": "Easy to read", "text": "Big letters, a text-size setting, high contrast, patterned colour-blind-safe lines, a dyslexia-friendly font and tap mode." },
+		{ "title": "Star Atlas", "text": "Every solved theme becomes a constellation, filed by category. Fill the pages and replay any sky." },
+		{ "title": "Meteor Run", "text": "From level 15: spell any word, watch used stars burn up and new ones fall, beat each round's target and stack perks. Practise as often as you like, or try the Daily Run." },
+		{ "title": "Challenge your friends", "text": "Send a solved sky by text or any social app and dare a friend to beat your time on the very same board. Win or defend your time for Stardust." }
+	],
+	"shots": {
+		"orientation": "portrait",
+		"width": 360,
+		"height": 800,
+		"items": [
+			{ "full": "img/shots/01.webp", "thumb": "img/shots/01_s.webp", "caption": "Every letter is a star: trace the theme words" },
+			{ "full": "img/shots/02.webp", "thumb": "img/shots/02_s.webp", "caption": "Words bend through neighbouring stars" },
+			{ "full": "img/shots/03.webp", "thumb": "img/shots/03_s.webp", "caption": "Find the Polestar and the sky names itself" },
+			{ "full": "img/shots/04.webp", "thumb": "img/shots/04_s.webp", "caption": "A new Daily Sky every day, with a result to share" },
+			{ "full": "img/shots/05.webp", "thumb": "img/shots/05_s.webp", "caption": "Dare a friend to beat your time on the same sky" },
+			{ "full": "img/shots/06.webp", "thumb": "img/shots/06_s.webp", "caption": "No ads during a puzzle, ever" },
+			{ "full": "img/shots/07.webp", "thumb": "img/shots/07_s.webp", "caption": "Big letters and a high-contrast mode" },
+			{ "full": "img/shots/08.webp", "thumb": "img/shots/08_s.webp", "caption": "Fill your Star Atlas with constellations" }
+		]
+	},
+	"stores": {
+		"google_play": { "live": false, "url": "https://play.google.com/store/apps/details?id=com.roguefusegames.wordstellation" }
+	},
+	"privacy": { "file": "privacy.html", "effective": "TBD (set on the day it is published)" },
+	"terms": { "file": "terms.html", "effective": "TBD (set on the day it is published)" },
+	"data": [
+		"Your progress is saved only on your phone. There's no account, so uninstalling the game or clearing its storage deletes it, and we can't restore it. If you use Google Play Games, its scores and achievements are kept by Google.",
+		"To change your ad privacy choices, open Settings ▸ Privacy options in the game.",
+		"Bought something that didn't arrive? Use Restore purchases in the game. Refunds go through Google Play."
+	]
+}

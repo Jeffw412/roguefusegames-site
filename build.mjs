@@ -496,6 +496,10 @@ function build() {
 	const urls = ["/", "/support/", "/privacy/"];
 	for (const g of games) {
 		fs.cpSync(path.join(g.dir, "img"), path.join(DIST, g.slug, "img"), { recursive: true });
+		// Extra folders served as-is under /<slug>/<dir>/ (e.g. Wordstellation's challenge landing page, c/).
+		for (const dir of g.copy || []) {
+			fs.cpSync(path.join(g.dir, dir), path.join(DIST, g.slug, dir), { recursive: true });
+		}
 		write(`${g.slug}/index.html`, gamePage(g, games));
 		urls.push(g.base);
 		for (const kind of ["privacy", "terms"].filter((k) => !g[k].pending)) {
