@@ -4,8 +4,8 @@
 	"store_title": "Crater Tanks: Artillery Wars",
 	"tagline": "Artillery Wars",
 	"kicker": "Turn-based 3D tank artillery for Android",
-	"status": "Closed beta",
-	"status_kind": "beta",
+	"status": "Out now",
+	"status_kind": "live",
 	"genre": "Turn-based artillery",
 	"platforms": ["Android"],
 	"package": "com.cratertanks.game",
@@ -59,11 +59,10 @@
 	},
 	"trailer": { "youtube": "pZm6-IpB9uE", "poster": "img/trailer.webp", "poster_fallback": "img/trailer.jpg" },
 	"stores": {
-		"google_play": { "live": false, "url": "https://play.google.com/store/apps/details?id=com.cratertanks.game" }
+		"google_play": { "live": true, "url": "https://play.google.com/store/apps/details?id=com.cratertanks.game" }
 	},
 	"links": [
-		{ "label": "Join the closed beta", "url": "https://cratertanks.com/beta/", "primary": true },
-		{ "label": "cratertanks.com", "url": "https://cratertanks.com/" }
+		{ "label": "cratertanks.com", "url": "https://cratertanks.com/", "primary": true }
 	],
 	"email": "support@cratertanks.com",
 	"privacy": { "external": "https://cratertanks.com/privacy" },
