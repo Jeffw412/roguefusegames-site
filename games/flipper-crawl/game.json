@@ -1,0 +1,65 @@
+{
+	"order": 5,
+	"name": "Flipper Crawl",
+	"store_title": "Flipper Crawl",
+	"tagline": "Flip. Build. Hold the gate.",
+	"kicker": "3D pinball meets tower defense for Android",
+	"status": "In development",
+	"status_kind": "dev",
+	"genre": "Pinball / tower defense",
+	"platforms": ["Android"],
+	"package": "com.roguefusegames.flippercrawl",
+	"accent": "#ff8a1f",
+	"accent2": "#b48cff",
+	"icon": "img/icon_192.png",
+	"hero": {
+		"type": "art",
+		"image": "img/hero.webp",
+		"mobile": "img/hero_m.webp",
+		"fallback": "img/hero.jpg",
+		"position": "70% 50%"
+	},
+	"card_image": "img/shots/01_s.webp",
+	"og_image": "img/hero.jpg",
+	"summary": "Monsters march down a real 3D pinball table toward your castle gate, and the ball is your weapon. Flip, build towers, cast spells and hold the gate.",
+	"description": [
+		"Every battle is a fresh table: goblins, skeletons, bats and worse walk the lanes from the castle toward the shield gate above your flippers. Every bumper, ramp and slingshot hit strikes the monsters in its path, and glowing pads let you build ballistas, cannons, mortars and tesla towers between shots.",
+		"Draft upgrades between waves, evolve your weapons, cast chain lightning, mortar barrages, frost and walls of fire, and face signature bosses with cinematic entrances. Then take on seven biome tables across the realm map, an Endless Siege and a new Daily Rift every day."
+	],
+	"stats": [
+		["7", "biome tables"],
+		["39", "monsters to discover"],
+		["0", "accounts or ads"]
+	],
+	"features": [
+		{ "title": "Real pinball", "text": "Flippers, plunger, nudge and tilt on a physics table with bumpers, slingshots, ramps, drop targets and multiball." },
+		{ "title": "Tower defense", "text": "Build and upgrade towers on glowing pads while the ball does the heavy hitting." },
+		{ "title": "Spells and skills", "text": "Chain lightning, mortar barrages, frost and fire walls, plus upgrade drafts and weapon evolutions every run." },
+		{ "title": "Epic bosses", "text": "Signature bosses with cinematic entrances, kill cams and a DRAGONFALL wizard mode." },
+		{ "title": "Realms and dailies", "text": "A realm map across seven biomes, an Endless Siege, a Daily Rift, daily quests and achievements." },
+		{ "title": "Grow stronger", "text": "Research trees, ball cores and Keep upgrades carry over between runs. No account needed; it plays offline." }
+	],
+	"shots": {
+		"orientation": "landscape",
+		"width": 640,
+		"height": 360,
+		"items": [
+			{ "full": "img/shots/01.webp", "thumb": "img/shots/01_s.webp", "caption": "Every realm opens with a reveal" },
+			{ "full": "img/shots/02.webp", "thumb": "img/shots/02_s.webp", "caption": "Mortar barrage on the second wave" },
+			{ "full": "img/shots/03.webp", "thumb": "img/shots/03_s.webp", "caption": "Freeze the pack, then flip" },
+			{ "full": "img/shots/04.webp", "thumb": "img/shots/04_s.webp", "caption": "Draft upgrades between waves" },
+			{ "full": "img/shots/05.webp", "thumb": "img/shots/05_s.webp", "caption": "Fight across the realm map" },
+			{ "full": "img/shots/06.webp", "thumb": "img/shots/06_s.webp", "caption": "Upgrade the Keep" }
+		]
+	},
+	"stores": {
+		"google_play": { "live": false, "url": "https://play.google.com/store/apps/details?id=com.roguefusegames.flippercrawl" }
+	},
+	"privacy": { "file": "privacy.html", "effective": "November 22, 2026" },
+	"terms": { "file": "terms.html", "effective": "November 22, 2026" },
+	"data": [
+		"Your progress is saved only on your phone. There's no account; if Android backup is on, Android can restore the save on a new phone. Otherwise uninstalling the game or clearing its storage deletes it, and we can't restore it.",
+		"The game sends nothing to us: no analytics, no ads and no crash reports.",
+		"If the game offers purchases, they go through Google Play. Refunds go through Google Play too."
+	]
+}
