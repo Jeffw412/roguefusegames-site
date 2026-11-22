@@ -29,7 +29,7 @@
 	"stats": [
 		["7", "biome tables"],
 		["39", "monsters to discover"],
-		["0", "accounts or ads"]
+		["0", "accounts needed"]
 	],
 	"features": [
 		{ "title": "Real pinball", "text": "Flippers, plunger, nudge and tilt on a physics table with bumpers, slingshots, ramps, drop targets and multiball." },
@@ -55,11 +55,11 @@
 	"stores": {
 		"google_play": { "live": false, "url": "https://play.google.com/store/apps/details?id=com.roguefusegames.flippercrawl" }
 	},
-	"privacy": { "file": "privacy.html", "effective": "November 21, 2026" },
-	"terms": { "file": "terms.html", "effective": "November 21, 2026" },
+	"privacy": { "file": "privacy.html", "effective": "November 22, 2026" },
+	"terms": { "file": "terms.html", "effective": "November 22, 2026" },
 	"data": [
 		"Your progress is saved only on your phone. There's no account; if Android backup is on, Android can restore the save on a new phone. Otherwise uninstalling the game or clearing its storage deletes it, and we can't restore it.",
-		"The game sends nothing to us: no analytics, no ads and no crash reports.",
-		"If the game offers purchases, they go through Google Play. Refunds go through Google Play too."
+		"The game sends nothing to us: no analytics of our own and no crash reports. It shows Google AdMob ads (rewarded ads you choose, and occasional ad breaks between runs, never during one); AdMob uses your device's advertising ID, and the game asks for consent where the law requires it. Remove Ads turns ad breaks off.",
+		"Purchases go through Google Play, and refunds go through Google Play too. Nothing you buy is random."
 	]
 }
