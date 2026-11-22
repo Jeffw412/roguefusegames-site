@@ -55,8 +55,8 @@
 	"stores": {
 		"google_play": { "live": false, "url": "https://play.google.com/store/apps/details?id=com.roguefusegames.flippercrawl" }
 	},
-	"privacy": { "file": "privacy.html", "effective": "November 22, 2026" },
-	"terms": { "file": "terms.html", "effective": "November 22, 2026" },
+	"privacy": { "file": "privacy.html", "effective": "November 21, 2026" },
+	"terms": { "file": "terms.html", "effective": "November 21, 2026" },
 	"data": [
 		"Your progress is saved only on your phone. There's no account; if Android backup is on, Android can restore the save on a new phone. Otherwise uninstalling the game or clearing its storage deletes it, and we can't restore it.",
 		"The game sends nothing to us: no analytics, no ads and no crash reports.",
