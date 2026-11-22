@@ -145,6 +145,16 @@ a.play-badge:hover { color: var(--text); border-color: rgba(255, 255, 255, 0.6);
 .studio-hero { position: relative; isolation: isolate; }
 .studio-hero .banner { position: relative; display: block; background: #000; }
 .studio-hero .banner img { width: 100%; height: auto; max-height: 78vh; object-fit: cover; object-position: 35% 50%; }
+/* The intro video: its own 16:9 shape (never cropped: the logo fills the frame), centred and capped in height, its
+   side edges faded into the page so a wide screen shows no seam. */
+.studio-hero .hero-video { background: var(--bg); }
+.hero-video video { display: block; width: min(100%, calc(74vh * 16 / 9)); height: auto; aspect-ratio: 16 / 9; margin: 0 auto; background: var(--bg); -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent); mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent); }
+.studio-hero .hero-video::after { height: 22%; }
+.sound-toggle { position: absolute; right: 16px; top: 16px; z-index: 2; display: inline-flex; align-items: center; gap: 7px; min-height: 40px; padding: 8px 14px; border: 1px solid rgba(255, 255, 255, 0.22); border-radius: 999px; background: rgba(7, 9, 13, 0.6); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); color: var(--text); font: 700 14px/1 var(--ui); letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; }
+.sound-toggle:hover { border-color: rgba(255, 255, 255, 0.5); }
+.sound-toggle svg { width: 18px; height: 18px; fill: currentColor; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+.sound-toggle[hidden] { display: none; }
+@media (max-width: 600px) { .sound-toggle { top: 8px; right: 8px; min-height: 36px; width: 36px; padding: 0; justify-content: center; } .sound-toggle span { display: none; } }
 .studio-hero .banner::after { content: ""; position: absolute; inset: auto 0 0; height: 38%; background: linear-gradient(180deg, transparent, var(--bg)); pointer-events: none; }
 .studio-hero .intro { position: relative; z-index: 1; margin-top: -28px; padding-bottom: 20px; text-align: center; }
 .studio-hero .intro .cta-row { justify-content: center; }

@@ -192,11 +192,12 @@ function homePage(games) {
 	].map(([ico, t, p]) => `<li><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true">${VALUE_ICONS[ico]}</svg></span><h3>${t}</h3><p>${p}</p></li>`).join("");
 	const body = `
 <section class="studio-hero">
-	<picture class="banner">
-		<source media="(max-width: 700px)" srcset="/img/banner_169.webp" width="1000" height="563">
-		<source media="(max-width: 1300px)" srcset="/img/banner_wide_1200.webp" width="1200" height="480">
-		<img src="/img/banner_wide.webp" alt="Rogue Fuse Games" width="1983" height="793" fetchpriority="high" decoding="async">
-	</picture>
+	<div class="banner hero-video">
+		<video id="rfg-intro" muted playsinline preload="auto" poster="/img/rfg_intro_poster.webp" width="1280" height="720" aria-label="Rogue Fuse Games logo intro">
+			<source src="/video/rfg_intro.mp4?v=${BUILD_ID}" type="video/mp4">
+		</video>
+		<button class="sound-toggle" type="button" id="rfg-sound" aria-label="Replay the intro with sound" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none"/></svg><span>Sound</span></button>
+	</div>
 	<div class="wrap intro">
 		<h1 class="sr-only">Rogue Fuse Games</h1>
 		<p class="kicker">Independent game studio</p>
@@ -240,8 +241,8 @@ function homePage(games) {
 		title: `${site.studio} | Independent mobile games`,
 		description: `${site.studio}: ${site.lead}`,
 		canonical: abs("/"),
-		extra: `<script type="application/ld+json">${JSON.stringify(ld)}</script>\n`,
-	}, "games", body, games);
+		extra: `<link rel="preload" as="image" href="/img/rfg_intro_poster.webp" fetchpriority="high">\n<script type="application/ld+json">${JSON.stringify(ld)}</script>\n`,
+	}, "games", body, games, `<script src="/home.js?v=${BUILD_ID}" defer></script>\n`);
 }
 
 function gamePage(g, games) {
@@ -521,7 +522,7 @@ function build() {
 }
 
 // ===== Local preview server (clean URLs and 404.html, like GitHub Pages) ============================================
-const TYPES = { ".html": "text/html; charset=utf-8", ".css": "text/css", ".js": "text/javascript", ".json": "application/json", ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg", ".webp": "image/webp", ".woff2": "font/woff2", ".txt": "text/plain; charset=utf-8", ".xml": "application/xml" };
+const TYPES = { ".html": "text/html; charset=utf-8", ".css": "text/css", ".js": "text/javascript", ".json": "application/json", ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg", ".webp": "image/webp", ".mp4": "video/mp4", ".woff2": "font/woff2", ".txt": "text/plain; charset=utf-8", ".xml": "application/xml" };
 
 function serve(port) {
 	http.createServer((req, res) => {
