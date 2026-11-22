@@ -298,7 +298,13 @@ main.doc .game-block h3 { display: flex; align-items: center; gap: 12px; margin:
 .game-block .legal-links a { font: 700 15px/1 var(--ui); letter-spacing: 0.08em; text-transform: uppercase; }
 .notfound { text-align: center; padding: 80px 16px; }
 .notfound h1 { font: 400 clamp(48px, 14vw, 120px)/1 var(--display); margin: 0; color: var(--ember); }
+/* A live game's Google Play badge, laid over the foot of its card, under the text column (beside the card link). */
+.games li.has-store { position: relative; }
+.games li.has-store .game-card .body { padding-bottom: 84px; }
+.card-play { position: absolute; left: 108px; bottom: 22px; z-index: 2; }
+.game-card:hover + .card-play { transform: translateY(-3px); }
 @media (max-width: 479px) {
 	.game-card .body { flex-direction: column; gap: 0; }
 	.game-card h3 { margin-top: 12px; }
+	.card-play { left: 20px; }
 }

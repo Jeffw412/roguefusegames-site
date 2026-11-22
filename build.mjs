@@ -168,8 +168,11 @@ function storeBadge(g) {
 
 // ===== Pages ========================================================================================================
 function homePage(games) {
+	// A live game also gets its Google Play badge on the card. The card is one link, so the badge sits beside it in
+	// the <li> (a link can't hold another) and is laid over the card's foot (style.css: .card-play).
+	const live = (g) => g.stores && g.stores.google_play && g.stores.google_play.live && g.stores.google_play.url;
 	const cards = games.map((g) => `
-		<li><a class="game-card" href="${g.base}" style="--accent:${g.accent};--accent2:${g.accent2 || g.accent}">
+		<li${live(g) ? ` class="has-store"` : ""}><a class="game-card" href="${g.base}" style="--accent:${g.accent};--accent2:${g.accent2 || g.accent}">
 			<div class="art"><img src="${asset(g, g.card_image || g.icon)}" alt="" width="640" height="360" decoding="async"${g.card_position ? ` style="object-position:${g.card_position}"` : ""}><span class="pill ${esc(g.status_kind)}">${esc(g.status)}</span></div>
 			<div class="body">
 				<img class="icon" src="${asset(g, g.icon)}" alt="" width="72" height="72" loading="lazy">
@@ -180,7 +183,7 @@ function homePage(games) {
 					<span class="more">See the game ${ICONS.arrow}</span>
 				</div>
 			</div>
-		</a></li>`).join("");
+		</a>${live(g) ? `<a class="play-badge card-play" href="${esc(g.stores.google_play.url)}" rel="noopener" aria-label="Get ${esc(g.store_title || g.name)} on Google Play">${ICONS.play}<span><small>Get it on</small>Google Play</span></a>` : ""}</li>`).join("");
 	const values = [
 		["physics", "Big moments", "Real physics and destruction: craters that tear the ground, storms that throw the scenery."],
 		["fair", "Fair to play", "No paid loot boxes and nothing you have to buy to progress. Ads you watch are your choice."],
