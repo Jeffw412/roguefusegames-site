@@ -1,0 +1,42 @@
+{
+	"order": 6,
+	"name": "Last Line",
+	"store_title": "Last Line: Alien Siege",
+	"tagline": "Hold the street. Push them back.",
+	"kicker": "Endless squad shooter for Android",
+	"status": "In development",
+	"status_kind": "dev",
+	"genre": "Action / lane shooter",
+	"platforms": ["Android"],
+	"package": "com.roguefusegames.lastline",
+	"accent": "#ff7a1a",
+	"accent2": "#3fe0c8",
+	"summary": "An alien horde is pouring through the city. Lead your hero and an ever-growing squad up the avenue, steer into the thick of the swarm, grab weapons and power-ups, and see how far you can push the line.",
+	"description": [
+		"Drag your squad across the street to aim at the densest part of the horde. Shoot troop gates to grow your army, crack open weapon crates for rocket pods, plasma miniguns and rail lances, and trigger your hero's special skill when the swarm gets too close.",
+		"The city never ends: every district brings new alien breeds, and every 1,000 metres a boss blocks the road. Reach a checkpoint and you can start your next run from there. Upgrade your army, level your heroes and unlock new weapons between runs."
+	],
+	"stats": [
+		["∞", "metres of city"],
+		["11", "alien breeds"],
+		["8", "heroes"]
+	],
+	"features": [
+		{ "title": "Steer the squad", "text": "One finger: slide left and right to focus your army's fire where the horde is thickest." },
+		{ "title": "Grow your army", "text": "Shoot gates to raise their numbers, then march through to multiply your troops." },
+		{ "title": "Weapon crates", "text": "Rifles, scatter guns, pulse lasers, rocket pods, plasma miniguns, arc tesla and rail lances." },
+		{ "title": "Bosses every 1,000 m", "text": "Goliath, the Hive Queen, the Tripod Overlord, the Mothership and the Leviathan." },
+		{ "title": "Checkpoints", "text": "Every 500 metres you reach becomes a place to start your next run." },
+		{ "title": "Heroes and upgrades", "text": "Eight heroes with special skills, plus army, hero and weapon upgrades between runs." }
+	],
+	"stores": {
+		"google_play": { "live": false, "url": "https://play.google.com/store/apps/details?id=com.roguefusegames.lastline" }
+	},
+	"privacy": { "file": "privacy.html", "effective": "November 27, 2026" },
+	"terms": { "file": "terms.html", "effective": "November 27, 2026" },
+	"data": [
+		"Your progress is saved only on your phone. There's no account; if Android backup is on, Android can restore the save on a new phone. Otherwise uninstalling the game or clearing its storage deletes it, and we can't restore it.",
+		"The game sends nothing to us: no analytics of our own and no crash reports. It shows Google AdMob ads (rewarded ads you choose, and occasional ad breaks between runs, never during one); AdMob uses your device's advertising ID, and the game asks for consent where the law requires it. Remove Ads turns ad breaks off.",
+		"Purchases and the Commander Pass subscription go through Google Play, and refunds and cancellations go through Google Play too. Nothing you buy is random."
+	]
+}
