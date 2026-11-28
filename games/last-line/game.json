@@ -11,6 +11,15 @@
 	"package": "com.roguefusegames.lastline",
 	"accent": "#ff7a1a",
 	"accent2": "#3fe0c8",
+	"icon": "img/icon_192.png",
+	"hero": {
+		"type": "art",
+		"image": "img/hero.webp",
+		"mobile": "img/hero_m.webp",
+		"fallback": "img/hero.jpg",
+		"position": "85% 50%"
+	},
+	"og_image": "img/hero.jpg",
 	"summary": "An alien horde is pouring through the city. Lead your hero and an ever-growing squad up the avenue, steer into the thick of the swarm, grab weapons and power-ups, and see how far you can push the line.",
 	"description": [
 		"Drag your squad across the street to aim at the densest part of the horde. Shoot troop gates to grow your army, crack open weapon crates for rocket pods, plasma miniguns and rail lances, and trigger your hero's special skill when the swarm gets too close.",
